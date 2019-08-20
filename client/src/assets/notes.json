@@ -1,0 +1,27 @@
+ [
+    {
+      "id": "note1",
+      "customerId": "emp1",
+      "slug": "customer 1 note 1"
+    },
+    {
+      "id": "note2",
+      "customerId": "emp1",
+      "slug": "customer 1 note 2"
+    },
+    {
+      "id": "note3",
+      "customerId": "emp1",
+      "slug": "customer 1 note 3"
+    },
+    {
+      "id": "note4",
+      "customerId": "emp2",
+      "slug": "customer 2 note 1"
+    },
+    {
+      "id": "note5",
+      "customerId": "emp3",
+      "slug": "customer 3 note 1"
+    }
+  ]

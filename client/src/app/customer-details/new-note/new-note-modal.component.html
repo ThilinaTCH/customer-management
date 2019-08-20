@@ -1,0 +1,12 @@
+<div class="alert-modal">
+  <h3 class="alert-modal-title">New Note</h3>
+  <div>
+    <form [formGroup]="noteForm" class="form" (ngSubmit)="onSubmit(noteForm.value)">
+      <textarea rows=4 class="form-control form-input" type="text" formControlName="note"></textarea>
+      <div class="alert-modal-buttons">
+        <button mat-raised-button color="primary" class="alert-modal-button alert-modal-button-success" type="submit" [disabled]="!noteForm.valid">Save</button>
+        <button mat-raised-button class="alert-modal-button alert-modal-button-failure" type="button"(click)="onCloseCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="alert-modal">
+  <h3 class="alert-modal-title">New Customer</h3>
+  <div>
+    <form [formGroup]="customerForm" class="form" (ngSubmit)="onSubmit(customerForm.value)">
+      <div class="form-row">
+        <div class="form-group col">
+          <label class="col-12">
+            Firstname:
+            <input class="form-control form-input" type="text" formControlName="firstName">
+          </label>
+        </div>
+        <div class="form-group col">
+          <label class="col-12">
+            Lastname:
+            <input class="form-control form-input" type="text" formControlName="lastName">
+          </label>
+        </div>
+      </div>
+      <label class="col-12">
+        Phone:
+        <input class="form-control form-input" type="text" formControlName="phone">
+      </label>
+      <label class="col-12">
+        Email:
+        <input class="form-control form-input" type="email" formControlName="email" [email]="true">
+      </label>
+      <label class="col-12">
+        Status:
+        <select class="form-control form-input" formControlName="status">
+          <option value="prospective">Prospective</option>
+          <option value="current">Current</option>
+          <option value="nonactive">Non-Active</option>
+        </select>
+      </label>
+      <div class="alert-modal-buttons">
+        <button mat-raised-button color="primary" class="alert-modal-button alert-modal-button-success" type="submit"
+          [disabled]="!customerForm.valid">Save</button>
+        <button mat-raised-button class="alert-modal-button alert-modal-button-failure" type="button"
+          (click)="onCloseCancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

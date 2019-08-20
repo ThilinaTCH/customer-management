@@ -1,0 +1,54 @@
+ [
+    {
+      "id": "emp1",
+      "firstName": "Customer",
+      "lastName": "one",
+      "phone": "+11111111111",
+      "email": "cust1@email.com",
+      "notes": [
+        {
+          "id": "note1",
+          "customerId": "emp1",
+          "note": "customer 1 note 1"
+        },
+        {
+          "id": "note2",
+          "customerId": "emp1",
+          "note": "customer 1 note 2"
+        },
+        {
+          "id": "note3",
+          "customerId": "emp1",
+          "note": "customer 1 note 3"
+        }
+      ]
+    },
+    {
+      "id": "emp2",
+      "firstName": "Customer",
+      "lastName": "two",
+      "phone": "+222222222222",
+      "email": "cust2@email.com",
+      "notes":[
+        {
+          "id": "note4",
+          "customerId": "emp2",
+          "note": "customer 2 note 1"
+        }
+      ]
+    },
+    {
+      "id": "emp3",
+      "firstName": "Customer",
+      "lastName": "three",
+      "phone": "+33333333333333",
+      "email": "cust3@email.com",
+      "notes": [
+        {
+          "id": "note5",
+          "customerId": "emp3",
+          "note": "customer 3 note 1"
+        }
+      ]
+    }
+  ]

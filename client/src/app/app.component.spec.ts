@@ -1,15 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { MatToolbarModule } from '@angular/material';
+
+import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        MatToolbarModule        
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        BreadcrumbComponent
       ],
     }).compileComponents();
   }));
@@ -20,16 +25,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'customer-management-portal'`, () => {
+  it(`should have as title 'Customer Management Portal'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('customer-management-portal');
+    expect(app.title).toEqual('Customer Management Portal');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to customer-management-portal!');
+    expect(compiled.querySelector('h1').textContent).toContain('Customer Management Portal');
   });
 });

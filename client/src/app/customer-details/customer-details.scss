@@ -1,0 +1,32 @@
+@import '../styles/_variables';
+
+.customer-details {
+
+  .list-item {
+    margin: 20px 0px;
+
+    &:not(:first-child) {
+      border-top: 1px solid $grey4;
+    }
+
+    .note {
+      white-space: normal;
+    }
+
+    .icons-line {
+      margin-top: 10px;
+      .list-single-icon {
+        color: $grey5;
+        font-size: 20px;
+      }
+      .list-single-icon-number {
+        color: $grey5;
+        vertical-align: top;
+
+        &:not(:last-child) {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

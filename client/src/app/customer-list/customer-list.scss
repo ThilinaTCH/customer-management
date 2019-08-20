@@ -1,0 +1,15 @@
+@import '../styles/_variables';
+
+.customers {
+  .list-item {
+    height: 60px;
+
+    &:not(:first-child) {
+      border-top: 1px solid $grey4;
+    }
+
+    .list-line {
+      margin-bottom: 8px;
+    }
+  }
+}

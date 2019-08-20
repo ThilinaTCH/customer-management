@@ -1,0 +1,12 @@
+@import './styles/_variables';
+
+.app-header {
+  text-align: left;
+  background-color: $primary-light;
+
+  h1 {
+    i {
+      color: $primary-icon;
+    }
+  }
+}
