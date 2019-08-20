@@ -36,7 +36,7 @@ export class UpdateNoteModalComponent implements OnInit{
     updatedNote.note = values.note;
     this.noteService.updateNote(updatedNote)
     .then(response => {
-      this.thisDialogRef.close(updatedNote);
+      this.thisDialogRef.close(response);
       this.noteForm.reset();
     })
   }

@@ -70,7 +70,8 @@ export class CustomerDetailsComponent {
   }
 
   updateStatus(status: string){
-    this.customerService.updateStatus(this.customer.id, status);
+    this.customer.status = status;
+    this.customerService.updateStatus(this.customer.id, this.customer);
   }
 
 }

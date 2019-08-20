@@ -19,7 +19,7 @@
     </label>
     <label class="col-6">
       Status:
-      <select class="form-control form-input" (ngModelChange)="updateStatus(customer.status)" [ngModel]="customer.status">
+      <select class="form-control form-input" (change)="updateStatus($event.target.value)" [value]="customer.status">
         <option value="prospective">Prospective</option>
         <option value="current">Current</option>
         <option value="nonactive">Non-Active</option>

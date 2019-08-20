@@ -40,12 +40,12 @@ export class NewCustomerModalComponent implements OnInit {
     customer.firstName = values.firstName;
     customer.lastName = values.lastName;
     customer.phone = values.phone;
-    customer.email = values.custEmail;
+    customer.email = values.email;
     customer.status = values.status;
 
     this.customerService.createCustomer(customer)
       .then(response => {
-        this.thisDialogRef.close(customer);
+        this.thisDialogRef.close(response);
         this.customerForm.reset();
       });
   }

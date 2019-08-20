@@ -5,10 +5,5 @@ export class CustomerModel {
   lastName: string;
   phone: string;
   email: string;
-  
-  slug: string;
-  title: string;
-  image: string;
-  description: string;
-  tags: Array<Object>;
+  notes: any[]
 }

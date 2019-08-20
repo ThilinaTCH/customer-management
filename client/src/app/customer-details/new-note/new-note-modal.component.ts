@@ -37,7 +37,7 @@ export class NewNoteModalComponent implements OnInit{
     note.customerId = this.modalData.customerId;
     this.noteService.createNote(note)
     .then(response => {
-      this.thisDialogRef.close(note);
+      this.thisDialogRef.close(response);
       this.noteForm.reset();
     })
   }
