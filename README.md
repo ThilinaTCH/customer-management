@@ -56,7 +56,7 @@ Please follow GIT commit message convention as in [here](https://gist.github.com
 # CI with CircleCi
 
 This repo has integrated with CircleCI to run build and tests on Angular project. You can see the CI status below here.
-
+[![CircleCI](https://circleci.com/gh/ThilinaTCH/customer-management.svg?style=svg)](https://circleci.com/gh/ThilinaTCH/customer-management)
 
 # Future enhancements
 
