@@ -6,6 +6,8 @@ import { MatDialog } from '@angular/material';
 import { NewCustomerModalComponent } from './new-customer/new-customer-modal.component';
 import { DeleteCustomerModalComponent } from './delete-customer/delete-customer-modal.component';
 
+import { SlugifyPipe } from '../shared/customer-filter.pipe';
+
 @Component({
   selector: 'customer-list',
   styleUrls: ['./customer-list.scss'],
@@ -15,6 +17,7 @@ import { DeleteCustomerModalComponent } from './delete-customer/delete-customer-
 export class CustomerListComponent implements OnInit{
 
   customers: Array<CustomerModel>;
+  searchText: string = '';
 
   constructor(
     private route: ActivatedRoute,

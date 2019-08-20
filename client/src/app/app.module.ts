@@ -17,6 +17,7 @@ import { NoteService } from './services/note.service';
 
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { CustomerFilterPipe } from './shared/customer-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SharedModule } from './shared/shared.module';
     CustomerDetailsComponent,
     NewNoteModalComponent,
     UpdateNoteModalComponent,
-    DeleteNoteModalComponent
+    DeleteNoteModalComponent,
+    CustomerFilterPipe
   ],
   imports: [
     BrowserModule,

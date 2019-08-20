@@ -35,4 +35,11 @@ export class CustomerService {
         return true;
       })
   }
+
+  updateStatus(id: string, status: string){
+    return this.getCustomers()
+      .then(customers => {
+        return true;
+      })
+  }
 }

@@ -1,7 +1,31 @@
 <div class="col-lg-12 customer-details">
   <div class="card col-md-offset-2 col-md-8 border-0">
     <h3 class="list-title">{{customer.firstName}} {{customer.lastName}}</h3>
-    <button mat-raised-button color="primary" (click)="openNewNoteModal(customer.id)" class="col-2 mt-4">New Note</button>
+    <label class="col-6">
+      Firstname:
+      <input class="form-control form-input" type="text" [value]="customer.firstName" disabled>
+    </label>
+    <label class="col-6">
+      Lastname:
+      <input class="form-control form-input" type="text" [value]="customer.lastName" disabled>
+    </label>
+    <label class="col-6">
+      Phone:
+      <input class="form-control form-input" type="text" [value]="customer.phone" disabled>
+    </label>
+    <label class="col-6">
+      Email:
+      <input class="form-control form-input" type="text" [value]="customer.email" disabled>
+    </label>
+    <label class="col-6">
+      Status:
+      <select class="form-control form-input" (ngModelChange)="updateStatus(customer.status)" [ngModel]="customer.status">
+        <option value="prospective">Prospective</option>
+        <option value="current">Current</option>
+        <option value="nonactive">Non-Active</option>
+      </select>
+    </label>
+    <button mat-raised-button color="primary" (click)="openNewNoteModal(customer.id)" class="col-2 mt-5">New Note</button>
     <mat-list class="list">
       <mat-list-item class="list-item" *ngFor="let note of customer.notes">
         <span matLine class="note"> {{note.note}} </span>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { NoteService } from '../services/note.service';
+import { CustomerService } from '../services/customer.service';
 import { MatDialog } from '@angular/material';
 import { NewNoteModalComponent } from './new-note/new-note-modal.component';
 import { UpdateNoteModalComponent } from './update-note/update-note-modal.component';
@@ -18,6 +19,7 @@ export class CustomerDetailsComponent {
 
   constructor(
     private notesService: NoteService,
+    private customerService: CustomerService,
     private route: ActivatedRoute,
     public dialog: MatDialog
   ) { }
@@ -65,6 +67,10 @@ export class CustomerDetailsComponent {
 
   addNoteToList(note) {
     this.customer.notes.push(note);
+  }
+
+  updateStatus(status: string){
+    this.customerService.updateStatus(this.customer.id, status);
   }
 
 }

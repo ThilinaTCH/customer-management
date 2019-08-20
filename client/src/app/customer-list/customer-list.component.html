@@ -2,8 +2,11 @@
   <div class="card col-md-offset-3 col-md-6 border-0">
     <h3 class="list-title">Customers List</h3>
     <button mat-raised-button color="primary" (click)="openNewCustomerModal()" class="col-2 mt-4">New Customer</button>
+    <div class="col-6 mt-5 pl-0">
+      <input class="form-control form-input" type="text" [(ngModel)]="searchText" placeholder="Search by Firstname, Lastname, Phone, Email or Status">
+    </div>
     <mat-list class="list">
-      <mat-list-item class="list-item" *ngFor="let customer of customers">
+      <mat-list-item class="list-item" *ngFor="let customer of customers | customerFilter: searchText">
         <h3 matLine class="list-line">
           <mat-icon class="float-left">account_circle</mat-icon>
           <a class="ml-3 align-middle" [routerLink]="['/customer', customer.id]">{{customer.firstName}} {{customer.lastName}}</a> 

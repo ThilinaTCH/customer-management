@@ -5,6 +5,7 @@
       "lastName": "one",
       "phone": "+11111111111",
       "email": "cust1@email.com",
+      "status": "current",
       "notes": [
         {
           "id": "note1",
@@ -29,6 +30,7 @@
       "lastName": "two",
       "phone": "+222222222222",
       "email": "cust2@email.com",
+      "status": "prospective",
       "notes":[
         {
           "id": "note4",
@@ -43,6 +45,7 @@
       "lastName": "three",
       "phone": "+33333333333333",
       "email": "cust3@email.com",
+      "status": "not-active",
       "notes": [
         {
           "id": "note5",
