@@ -52,3 +52,13 @@ Install loopback-cli by running `npm install -g loopback-cli` to use LookBack sc
 # Commit message convention
 
 Please follow GIT commit message convention as in [here](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
+
+# CI with CircleCi
+
+This repo has integrated with CircleCI to run build and tests on Angular project. You can see the CI status below here.
+
+
+# Future enhancements
+
+Add authentication using LoopBack inbuild auth framework
+For front-end unit testing and e2e setup is already initiated where we can improve test coverage

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "learn-angular-from-scratch": {
+    "customer-management-portal": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/learn-angular-from-scratch",
+            "outputPath": "dist/customer-management-portal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "learn-angular-from-scratch:build"
+            "browserTarget": "customer-management-portal:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "learn-angular-from-scratch:build:production"
+              "browserTarget": "customer-management-portal:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "learn-angular-from-scratch:build"
+            "browserTarget": "customer-management-portal:build"
           }
         },
         "test": {
@@ -112,7 +112,7 @@
         }
       }
     },
-    "learn-angular-from-scratch-e2e": {
+    "customer-management-portal-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -121,11 +121,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "learn-angular-from-scratch:serve"
+            "devServerTarget": "customer-management-portal:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "learn-angular-from-scratch:serve:production"
+              "devServerTarget": "customer-management-portal:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "learn-angular-from-scratch"
+  "defaultProject": "customer-management-portal"
 }
