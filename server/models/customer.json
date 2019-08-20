@@ -15,10 +15,12 @@
       "required": true
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "defaultFn": ""
     },
     "email": {
-      "type": "string"
+      "type": "string",
+      "defaultFn": ""
     },
     "status": {
       "type": "string",
