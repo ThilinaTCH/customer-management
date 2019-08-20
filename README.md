@@ -49,16 +49,18 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-# Commit message convention
+# Developer guidelines
+
+## Commit message convention
 
 Please follow GIT commit message convention as in [here](https://gist.github.com/stephenparish/9941e89d80e2bc58a153)
 
-# CI with CircleCi
+## CI with CircleCi
 
 This repo has integrated with CircleCI to run build and tests on Angular project. You can see the CI status below here.
 [![CircleCI](https://circleci.com/gh/ThilinaTCH/customer-management.svg?style=svg)](https://circleci.com/gh/ThilinaTCH/customer-management)
 
-# Future enhancements
+## Future enhancements
 
 Add authentication using LoopBack inbuild auth framework
 For front-end unit testing and e2e setup is already initiated where we can improve test coverage
