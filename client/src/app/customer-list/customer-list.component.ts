@@ -6,8 +6,6 @@ import { MatDialog } from '@angular/material';
 import { NewCustomerModalComponent } from './new-customer/new-customer-modal.component';
 import { DeleteCustomerModalComponent } from './delete-customer/delete-customer-modal.component';
 
-import { SlugifyPipe } from '../shared/customer-filter.pipe';
-
 @Component({
   selector: 'customer-list',
   styleUrls: ['./customer-list.scss'],
